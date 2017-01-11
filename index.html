@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>OOP-TASK1</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="products">
+    <input type="text" id="searchQuery" placeholder="enter required product">
+<!--    <button id="findBtn">Find</button>-->
+   <h1>List of available products</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Place</th>
+          <th>Price</th>
+          <th>Weight</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="searchResult">
+      </tbody>
+    </table>
+  </div>
+  <div class="profile">
+   <h1>Your bill</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Place</th>
+          <th>Price</th>
+          <th>Weight</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td colspan="2">Total</td>
+          <td id="totalPrice">0</td>
+          <td id="totalWeight">0</td>
+        </tr>
+      </tfoot>
+      <tbody id="userPurchases">
+        <td colspan="4">There are no purchases yet.</td>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Enter your money amount: </p>
+      <input type="number" id="userMoney" placeholder="money">
+      <input type="button" id="modalOk" value="ok">
+    </div>
+  </div>
+
+
+
+
+  <script src='js/script.js'></script>
+</body>
+
+</html>
